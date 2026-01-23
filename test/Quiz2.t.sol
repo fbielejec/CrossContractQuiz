@@ -20,8 +20,8 @@ contract Quiz2Test is Test {
         (bool ok, bytes memory result) = contractC.f(emptyAddress);
 
         // TODO: What are the expected values of ok and result?
-        bool expectedOk = false; // TODO: fix this
-        uint256 expectedResultLength = 999; // TODO: fix this
+        bool expectedOk = true; // TODO: fix this
+        uint256 expectedResultLength = 0x0; // TODO: fix this
 
         assertEq(ok, expectedOk);
         assertEq(result.length, expectedResultLength);
