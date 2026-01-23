@@ -1,6 +1,6 @@
-.PHONY: all test-quiz-1 test-quiz-2 test-quiz-3 test-quiz-4 test-quiz-5 test-quiz-6 test-quiz-7 test-quiz-8 test-quiz-9 test-quiz-10 test-quiz-11
+.PHONY: test test-quiz-1 test-quiz-2 test-quiz-3 test-quiz-4 test-quiz-5 test-quiz-6 test-quiz-7 test-quiz-8 test-quiz-9 test-quiz-10 test-quiz-11
 
-all: test-quiz-1 test-quiz-2 test-quiz-3 test-quiz-4 test-quiz-5 test-quiz-6 test-quiz-7 test-quiz-8 test-quiz-9 test-quiz-10 test-quiz-11
+test: test-quiz-1 test-quiz-2 test-quiz-3 test-quiz-4 test-quiz-5 test-quiz-6 test-quiz-7 test-quiz-8 test-quiz-9 test-quiz-10 test-quiz-11
 
 test-quiz-1:
 	forge test --match-path test/Quiz1.t.sol -vvv

@@ -7,7 +7,10 @@ pragma solidity ^0.8.0;
 
 contract A {
     function f(address a) external {
-        (bool ok, ) = a.call(""); // TODO: replace "" with the correct calldata
+
+        bytes memory data = abi.encodeWithSignature("foo()");
+
+        (bool ok, ) = a.call(data); // TODO: replace "" with the correct calldata
         require(ok);
     }
 }
