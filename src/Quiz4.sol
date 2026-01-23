@@ -13,5 +13,6 @@ contract C4 {
 
     function f() external {
         // TODO: your code here
+      this.foo ();
     }
 }
