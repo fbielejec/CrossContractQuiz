@@ -31,15 +31,15 @@ contract Quiz7Test is Test {
         // assertEq(result, "");
 
         // Option B - returns "failure":
-        // string memory result = contractC.f(IA(emptyAddress));
-        // assertEq(result, "failure");
+        /* string memory result = contractC.f(IA(emptyAddress)); */
+        /* assertEq(result, "failure"); */
 
         // Option C - reverts entirely:
-        // vm.expectRevert();
-        // contractC.f(IA(emptyAddress));
+        vm.expectRevert();
+        contractC.f(IA(emptyAddress));
 
         // Default (wrong) - will fail:
-        string memory result = contractC.f(IA(emptyAddress));
-        assertEq(result, "this will fail");
+        /* string memory result = contractC.f(IA(emptyAddress)); */
+        /* assertEq(result, "this will fail"); */
     }
 }

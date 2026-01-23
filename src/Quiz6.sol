@@ -13,7 +13,7 @@ contract A6 {
 
     function f() external returns (string memory) {
         // TODO: your code here
-        return "";
+        return "success!";
     }
 }
 
