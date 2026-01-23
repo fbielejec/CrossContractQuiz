@@ -17,7 +17,7 @@ contract Quiz5Test is Test {
         bool result = contractA.f(address(contractB));
 
         // TODO: What does f return? true or false?
-        bool expected = false; // TODO: fix this
+        bool expected = true; // TODO: fix this
 
         assertEq(result, expected);
     }
