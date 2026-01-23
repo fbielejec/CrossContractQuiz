@@ -6,7 +6,9 @@ pragma solidity ^0.8.0;
 
 contract A3 {
     function foo(address b) external {
-        b.call(""); // TODO: replace "" with the correct calldata
+
+      bytes memory data = abi.encodeWithSignature("setb(uint256)",  1);
+      b.call(data); // TODO: replace "" with the correct calldata
     }
 }
 
